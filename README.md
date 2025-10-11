@@ -67,9 +67,11 @@ Run backend: npm index.js
 
 
 ## Screenshots  
-<img width="1920" height="1080" alt="Screenshot (1715)" src="https://github.com/user-attachments/assets/46b454ec-2523-46d2-ab2f-193563adbde8" />
-<img width="1920" height="1080" alt="Screenshot (1714)" src="https://github.com/user-attachments/assets/0a0a0f0c-49e8-4950-8b61-a9914ad7597c" />
-<img width="1920" height="1080" alt="Screenshot (1713)" src="https://github.com/user-attachments/assets/409587a8-c21f-436d-8b6f-66db5a11a47d" />
+<img width="1920" height="1080" alt="Screenshot (1716)" src="https://github.com/user-attachments/assets/e2ffae59-1bf4-4a9c-8ba2-04a7aa424b0a" />
+<img width="1920" height="1080" alt="Screenshot (1719)" src="https://github.com/user-attachments/assets/46a6f227-ada4-4dca-a5d2-b3cd680aabb6" />
+<img width="1920" height="1080" alt="Screenshot (1717)" src="https://github.com/user-attachments/assets/7f8309ad-69bd-47d4-822c-026bd2b1d0c8" />
+
+<img width="1920" height="1080" alt="Screenshot (1718)" src="https://github.com/user-attachments/assets/0d8741a2-27e1-44c7-ae84-6b21e8df8f2a" />
 
 
 ## Loved the project 💖? 
