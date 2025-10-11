@@ -1,11 +1,20 @@
 import { useState } from "react";
 import TopicInput from "./components/TopicInput";
+import QuizSection from "./components/QuizSection";
+import HistoryList from "./components/HistoryList";
 
 function App() {
   const [result, setResult] = useState(null);
+  const [history, setHistory] = useState([]);
 
   const handleResult = (data) => {
-    setResult(data);
+    const entry = { ...data, date: Date.now() };
+    setResult(entry);
+    setHistory([entry, ...history]);
+  };
+
+  const handleSelectHistory = (index) => {
+    setResult(history[index]);
   };
 
   return (
@@ -26,6 +35,12 @@ function App() {
           </h3>
           <p className="text-gray-700">{result.explanation}</p>
         </div>
+      )}
+
+      {result && <QuizSection quiz={result.quiz} />}
+
+      {history.length > 0 && (
+        <HistoryList history={history} onSelect={handleSelectHistory} />
       )}
     </div>
   );
