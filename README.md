@@ -1,57 +1,86 @@
 # 📘 Vaathi – AI-Powered Study Companion  
 
-Vaathi is a lightweight web app built during **Hacktoberfest Hackathon**. It helps students **learn faster and smarter** by generating **AI-powered study guides** and **personalized learning roadmaps**.  
+## Introduction 🐱‍💻
+- Vaathi is an AI-powered study companion that helps students learn smarter by generating **topic-wise study guides** and **personalised learning roadmaps**.
+- Built with **React + TailwindCSS** (frontend) and **Node.js + Express** (backend), Vaathi integrates with the <a href="https://www.digitalocean.com/products/gradient/platform">DigitalOcean Gradient™ AI</a> Platform to leverage managed AI agents for generating simplified explanations, quizzes, and structured study plans.
+- The project demonstrates how **Gradient Agents** can be embedded into custom applications, providing reliable, real-time AI responses through a secure endpoint and access key.
+- Vaathi makes education more **accessible, personalised, and motivating**, while showcasing the potential of **AI + DigitalOcean** in building impactful edtech tools.
 
----
+## Tech Stack used 👨‍💻
 
+- **JavaScript** 
+- **React.js** 
+- **Node**
+- **Express**
+  
 ## ✨ Features
-- **AI-Generated Study Guides**  
-  Enter a topic and instantly get a plain-language explanation + 3 quiz questions.  
+- Generate **AI-powered study guides** instantly for any topic 📘.
 
-- **Custom Learning Roadmaps**  
-  Input your goal, current skills, and weekly availability → get a week-by-week plan with study/practice balance, resources, and self-assessment tasks.  
+- Each guide includes a **simplified explanation** and **some quiz questions** 📝.
 
-- **Simple UI**  
-  Built with **React + TailwindCSS** for a clean, responsive interface.  
+- Create **personalised learning roadmaps** based on skills, goals, and time availability 🎯.
 
-- **Backend API**  
-  Built with **Node.js + Express**, connects to AI models (Gemini / Claude / OpenAI) but also includes **local fallback generation** so the app works even without internet keys.  
+- Roadmaps include **weekly objectives, tasks**, and **resources** 📅.
 
----
+- **Responsive UI** built with React + TailwindCSS for smooth user experience 🎨.
 
-## 🚀 Tech Stack
-- **Frontend**: React (Vite), TailwindCSS  
-- **Backend**: Node.js, Express  
-- **AI Integration**: Google Gemini API (via REST), with fallback to local generators for guaranteed demo  
-- **Deployment-ready**: Backend can run on DigitalOcean / Render / Railway, Frontend on Netlify / Vercel  
+- Powered by **DigitalOcean Gradient AI Agents** for reliable AI integration ⚡.
 
----
+## Learnings 📝
+  
+- Learned how to create AI agents use knowledge base in DigitalOcean's Gradient AI platform and integrated in our project using DigitalOcean's API.
+  
 
-## 🛠️ How It Works
-1. User enters a **topic** → backend calls Gemini (or fallback) → returns JSON → frontend renders explanation + quiz.  
-2. User enters **goal + skills + time commitment** → backend calls Gemini (or fallback) → returns JSON roadmap → frontend displays weekly plan.  
-3. If AI API is unavailable, EduMind gracefully switches to a **deterministic local fallback** (ensures the demo never breaks).  
 
----
+## Installation 🛠️
+  **Step 1**: Fork the repository. You can fork the repository by clicking on the fork button on the right-hand side below the profile.<br> 
 
-## 📦 Setup & Run
+  **Step 2**: Clone your forked repository. Replace **yourusername** with your GitHub Username. 
+  
+  ```
+https://github.com/HarshitAditya27/Vaathi.git
+``` 
+  
+  **Step 3** : Go to the client folder and run npm i. It will install all the packages and dependencies used in the project. 
+  
+  ```
+cd client
+npm i
+``` 
 
-### 1. Clone & Install
-```bash
-git clone <your-repo>
-cd edumind
-npm install   # for React frontend
-```
-### 2.Backend Setup
-```bash
+
+  **Step 4** : Run npm run dev. This will start the client in your local machine 🖥️.  
+  
+  ```
+npm run dev
+``` 
+  
+  
+  **Step 5** : Now go to the server folder and run npm i. It will install all the packages and dependencies used in the project. 
+  
+  ```
 cd server
-npm install
-Create .env in server/:
-PORT=5000
-# Use any available AI key (Gemini, Claude, or leave blank for mock)
-GOOGLE_API_KEY=your-key-here
-Run backend: npm index.js
+npm i
+``` 
+  **Step 4** : Run node index.js. This will start the server in your local machine 🖥️.  
+  
+  ```
+node index.hs
+``` 
+Hurray 🥳, you successfully deployed the project in your local machine 🎉.  
+
+🚨But the app won't work because it will require **API keys** from various tools which are mentioned in **Setup .env file** section.
+
+ ### Setup .env file
+
+```js
+AGENT_ENDPOINT=
+AGENT_ACCESS_KEY=e
+PORT=
+
+
 ```
+
 ## 📊 Example Usage
 ```bash
 {
@@ -67,11 +96,13 @@ Run backend: npm index.js
 
 
 ## Screenshots  
-<img width="1920" height="1080" alt="Screenshot (1716)" src="https://github.com/user-attachments/assets/e2ffae59-1bf4-4a9c-8ba2-04a7aa424b0a" />
-<img width="1920" height="1080" alt="Screenshot (1719)" src="https://github.com/user-attachments/assets/46a6f227-ada4-4dca-a5d2-b3cd680aabb6" />
-<img width="1920" height="1080" alt="Screenshot (1717)" src="https://github.com/user-attachments/assets/7f8309ad-69bd-47d4-822c-026bd2b1d0c8" />
 
-<img width="1920" height="1080" alt="Screenshot (1718)" src="https://github.com/user-attachments/assets/0d8741a2-27e1-44c7-ae84-6b21e8df8f2a" />
+
+<img width="1882" height="962" alt="Screenshot (1716)" src="https://github.com/user-attachments/assets/fd33934b-9cc8-47bf-947b-42ced106cba6" />
+<img width="1880" height="903" alt="Screenshot (1719)" src="https://github.com/user-attachments/assets/61172634-5af9-49b9-a432-79917641fe8d" />
+<img width="1866" height="969" alt="Screenshot (1722)" src="https://github.com/user-attachments/assets/0de872b4-28e0-447b-af8a-c9a347a723fe" />
+<img width="1880" height="911" alt="Screenshot (1723)" src="https://github.com/user-attachments/assets/0eff82a0-c097-4e39-9fbf-6f68f5ed8f81" />
+<img width="1877" height="602" alt="Screenshot (1725)" src="https://github.com/user-attachments/assets/a765301f-982b-4bfe-8483-f097ccb7f78c" />
 
 
 ## Loved the project 💖? 
