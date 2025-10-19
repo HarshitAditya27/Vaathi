@@ -1,4 +1,5 @@
 # 📘 Vaathi – AI-Powered Study Companion  
+ <a href="https://youtu.be/y4VGQjA4YAw">Demo Link</a> </p>
 
 ## Introduction 🐱‍💻
 - Vaathi is an AI-powered study companion that helps students learn smarter by generating **topic-wise study guides** and **personalised learning roadmaps**.
